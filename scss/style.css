@@ -9,7 +9,7 @@ h3 {
 
 html,
 body {
-  font-family: "OpenSans";
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   height: 100%;
   color: #333333;
@@ -28,10 +28,13 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
   height: 90px;
   width: 100%;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 75px;
 }
 
 .header__container {
@@ -97,7 +100,7 @@ body {
 }
 
 .main__hotel {
-  margin-top: 75px;
+  margin-bottom: 141px;
 }
 .hotel {
 }
@@ -191,7 +194,7 @@ body {
 }
 
 .main__advantage {
-  margin-top: 141px;
+  margin-bottom: 120px;
 }
 .advantage {
 }
@@ -217,7 +220,55 @@ body {
   margin: 33px 102px 33px 0;
 }
 
-.advantage__item span {
-  line-height: 50px;
+.advantage__item p {
+  line-height: 20px;
   padding-left: 17px;
+}
+
+.main__capability {
+}
+.capability {
+}
+.capability__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 22px;
+  padding-bottom: 48px;
+}
+.capability__main {
+  display: flex;
+  background: rgba(51, 51, 51, 0.1);
+  border-radius: 12px;
+  padding: 31px 82px 28px 83px;
+}
+.capability__block {
+  display: flex;
+  flex-direction: column;
+  padding-right: 35px;
+}
+.block__image {
+  width: 210px;
+  height: 133px;
+  padding-bottom: 20px;
+}
+.block__name {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.block__text {
+  margin: 0;
+  padding-bottom: 23px;
+  max-width: 206px;
+  line-height: 20px;
+  flex: 1 1 auto;
+}
+.block__button {
+  width: 151.18px;
+  height: 34.06px;
+  background: #333333;
+  border-radius: 8px;
+  border: none;
+  color: white;
 }
