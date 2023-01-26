@@ -1,6 +1,15 @@
+ul {
+  padding: 0;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
-  font-family: OpenSans;
+  font-family: "OpenSans";
   font-size: 14px;
   height: 100%;
   color: #333333;
@@ -8,7 +17,7 @@ body {
 
 .container {
   max-width: 1140px;
-  padding: 0 15px;
+  padding: 0 165px;
 }
 
 .wrapper {
@@ -85,4 +94,130 @@ body {
 
 .main {
   flex: 1 1 auto;
+}
+
+.main__hotel {
+  margin-top: 75px;
+}
+.hotel {
+}
+.hotel__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 22px;
+}
+.hotel__stars {
+}
+.stars {
+}
+.stars__all {
+  display: flex;
+}
+.stars__item {
+  padding-right: 28.5px;
+  list-style: none;
+}
+
+.stars__item:first-child {
+  padding-left: 0;
+}
+.hotel__images {
+  display: flex;
+}
+
+.images__item_right {
+  width: 542.14px;
+  height: 385.3px;
+}
+
+.images__right {
+  padding-right: 28px;
+}
+.images__item {
+  width: 254.69px;
+  height: 122px;
+  padding-bottom: 11px;
+}
+
+.images__left {
+  display: flex;
+}
+
+.images__left_list {
+  display: flex;
+  flex-direction: column;
+  padding-right: 31px;
+}
+.images {
+}
+
+.images__item {
+}
+.contacts {
+}
+.contacts__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.contacts__adress {
+}
+.contacts__book {
+  width: 254px;
+  height: 41px;
+  background: #5047d7;
+  border-radius: 8px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+}
+
+.contacts__phone {
+  padding-bottom: 15px;
+}
+
+.contacts__map {
+  width: 254px;
+  height: 174.59px;
+  margin-bottom: 56px;
+}
+
+.main__advantage {
+  margin-top: 141px;
+}
+.advantage {
+}
+.advantage__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 22px;
+}
+
+.advantage__list {
+  display: flex;
+  min-height: 100%;
+}
+.advantage__row {
+  display: flex;
+  flex-direction: column;
+}
+.advantage__item {
+  height: 48px;
+  display: flex;
+  margin: 33px 102px 33px 0;
+}
+
+.advantage__item span {
+  line-height: 50px;
+  padding-left: 17px;
 }
