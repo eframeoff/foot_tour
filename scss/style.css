@@ -226,6 +226,7 @@ body {
 }
 
 .main__capability {
+  padding-bottom: 120px;
 }
 .capability {
 }
@@ -271,4 +272,62 @@ body {
   border-radius: 8px;
   border: none;
   color: white;
+}
+
+.main__other {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 122px;
+}
+.other {
+}
+
+.other__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  padding-bottom: 47px;
+}
+
+.other__hotels {
+  display: flex;
+}
+
+.hotels__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 31px;
+  background: #ffffff;
+  box-shadow: 0px 50px 50px rgba(184, 184, 184, 0.25);
+  border-radius: 15px;
+}
+
+.hotels__image {
+  width: 350px;
+  height: 215px;
+  border-radius: 16px;
+  padding-bottom: 26px;
+}
+.hotels__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 15px;
+  color: #333333;
+}
+.hotels__text {
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 13px;
+}
+
+.hotels__stars {
+}
+
+.hotels__container {
+  padding-left: 17px;
 }
