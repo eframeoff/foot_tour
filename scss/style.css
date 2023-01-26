@@ -18,6 +18,71 @@ body {
   flex-direction: column;
 }
 
+.header {
+  height: 90px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header__container {
+  display: flex;
+  padding: 0 6px;
+}
+
+.header__logo {
+}
+.header__menu {
+  display: flex;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+}
+
+.menu__item:last-child {
+  padding-left: 93px;
+}
+.menu__item {
+  font-size: 16px;
+  list-style: none;
+  padding: 0 15px;
+}
+
+.header__search {
+  position: relative;
+}
+.search {
+}
+.search__window {
+  width: 350px;
+  height: 44px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.search__window::placeholder {
+  position: absolute;
+  top: 12px;
+  left: 19px;
+  color: rgba(0, 0, 0, 0.33);
+}
+.search__logo {
+  position: absolute;
+  top: 7px;
+  right: 34px;
+  cursor: pointer;
+}
+.header__auth {
+  font-size: 16px;
+  color: #5047d7;
+  margin-left: 72px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
 .main {
   flex: 1 1 auto;
 }
