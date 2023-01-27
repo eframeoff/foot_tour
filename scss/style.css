@@ -2,6 +2,11 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 h3 {
   padding: 0;
   margin: 0;
@@ -44,6 +49,7 @@ body {
 }
 
 .header__logo {
+  /* margin-left: 6px; */
 }
 .header__menu {
   display: flex;
