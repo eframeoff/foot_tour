@@ -5,13 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foot Tour</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -61,29 +55,29 @@
               </ul>
             </div>
             <div class="hotel__images images">
-              <div class="images__right">
+              <div class="images__left">
                 <img
                   src="./img/Rectangle 457.png"
                   alt="Картинка 1"
-                  class="images__right_item"
+                  class="images__left_item"
                 />
               </div>
-              <div class="images__left">
-                <div class="images__left_list">
+              <div class="images__right">
+                <div class="images__right_list">
                   <img
                     src="./img/Rectangle 458.png"
                     alt="Картинка 2"
-                    class="images__item"
+                    class="images__right_item"
                   />
                   <img
                     src="./img/Rectangle 459.png"
                     alt="Картинка 3"
-                    class="images__item"
+                    class="images__right_item"
                   />
                   <img
                     src="./img/Rectangle 460.png"
                     alt="Картинка 5"
-                    class="images__item"
+                    class="images__right_item"
                   />
                 </div>
                 <div class="contacts">
@@ -129,43 +123,47 @@
             </div>
           </section>
           <section class="main__advantage advantage">
-            <div class="advantage__name">Преимущества</div>
+            <h3 class="advantage__name">Преимущества</h3>
             <div class="advantage__list">
               <div class="advantage__row">
                 <div class="advantage__item">
-                  <img src="./img/passport.svg" alt="" />
+                  <img src="./img/passport.svg" alt="Виза" />
                   <p>Для граждан РФ виза не требуется.</p>
                 </div>
                 <div class="advantage__item">
-                  <img src="./img/wifi.svg" alt="" />
+                  <img src="./img/wifi.svg" alt="Wi-Fi" />
                   <p>Бесплатный Wi-Fi в номере</p>
                 </div>
                 <div class="advantage__item">
-                  <img src="./img/airplane.svg" alt="" />
+                  <img src="./img/airplane.svg" alt="Аэропорт" />
                   <p>АЭРОПОРТ Antalya – 65 км</p>
                 </div>
               </div>
               <div class="advantage__row">
                 <div class="advantage__item">
-                  <img src="./img/travel.svg" alt="" />
+                  <img src="./img/travel.svg" alt="Развлечения" />
                   <p>Различные развлечения на любой вкус</p>
                 </div>
                 <div class="advantage__item">
-                  <img src="./img/baggage.svg" alt="" />
+                  <img src="./img/baggage.svg" alt="Трансфер" />
                   <p>Уютный первокласный трансфер</p>
                 </div>
                 <div class="advantage__item">
-                  <img src="./img/beach.svg" alt="" />
+                  <img src="./img/beach.svg" alt="Пляж" />
                   <p>Путь к пляжу: через территорию отеля</p>
                 </div>
               </div>
             </div>
           </section>
           <section class="main__capability capability">
-            <div class="capability__name">Возможности</div>
+            <h3 class="capability__name">Возможности</h3>
             <div class="capability__main">
-              <div class="capability__block">
-                <img src="./img/nightbeach.png" alt="" class="block__image" />
+              <div class="capability__block block">
+                <img
+                  src="./img/nightbeach.png"
+                  alt="Пляж"
+                  class="block__image"
+                />
                 <h4 class="block__name">Пляж</h4>
                 <p class="block__text">
                   Наша гостиница имеет крутой пляж, где вы можете расслабиться
@@ -173,7 +171,7 @@
                 <button class="block__button">Подробнее</button>
               </div>
               <div class="capability__block">
-                <img src="./img/hotel.png" alt="" class="block__image" />
+                <img src="./img/hotel.png" alt="Отель" class="block__image" />
                 <h4 class="block__name">Отель</h4>
                 <p class="block__text">
                   В этом разделе вы сможете узнать нашу гостиницу лучше
@@ -181,7 +179,7 @@
                 <button class="block__button">Подробнее</button>
               </div>
               <div class="capability__block">
-                <img src="./img/eat.png" alt="" class="block__image" />
+                <img src="./img/eat.png" alt="Питание" class="block__image" />
                 <h4 class="block__name">Питание в отеле</h4>
                 <p class="block__text">
                   Мы предоставляем трёх разовое питание за дополнительную плату
@@ -189,7 +187,11 @@
                 <button class="block__button">Подробнее</button>
               </div>
               <div class="capability__block">
-                <img src="./img/game.png" alt="" class="block__image" />
+                <img
+                  src="./img/game.png"
+                  alt="Развлечения"
+                  class="block__image"
+                />
                 <h4 class="block__name">Развлечения</h4>
                 <p class="block__text">Всё о развлечениях нашего отеля</p>
                 <button class="block__button">Подробнее</button>
@@ -197,10 +199,14 @@
             </div>
           </section>
           <section class="main__other other">
-            <div class="other__name">Другие отели</div>
+            <h3 class="other__name">Другие отели</h3>
             <div class="other__hotels">
               <div class="hotels__item">
-                <img src="img/limakHotel.png" alt="" class="hotels__image" />
+                <img
+                  src="img/limakHotel.png"
+                  alt="Лимак отель"
+                  class="hotels__image"
+                />
                 <div class="hotels__container">
                   <h3 class="hotels__name">LIMAK LIMBRA HOTEL</h3>
                   <p class="hotels__text">
@@ -211,7 +217,11 @@
                 </div>
               </div>
               <div class="hotels__item">
-                <img src="img/parkHotel.png" alt="" class="hotels__image" />
+                <img
+                  src="img/parkHotel.png"
+                  alt="Парк отель"
+                  class="hotels__image"
+                />
                 <div class="hotels__container">
                   <h3 class="hotels__name">LIMAK PARK HOTEL</h3>
                   <p class="hotels__text">
@@ -222,7 +232,11 @@
                 </div>
               </div>
               <div class="hotels__item">
-                <img src="img/vikingPark.png" alt="" class="hotels__image" />
+                <img
+                  src="img/vikingPark.png"
+                  alt="Викинг парк"
+                  class="hotels__image"
+                />
                 <div class="hotels__container">
                   <h3 class="hotels__name">VIKING PARK</h3>
                   <p class="hotels__text">
@@ -236,7 +250,7 @@
           </section>
           <section class="main__interesting interesting">
             <h3 class="interesting__name">Интересное для вас</h3>
-            <div class="interesting__pictures">
+            <div class="interesting__pictures pictures">
               <div class="pictures__left">
                 <div class="pictures__left-big bg">
                   <img
@@ -313,19 +327,19 @@
           <div class="sections__name">Разделы</div>
           <div class="sections__catalog">
             <ul class="catalog__list">
-              <li class="catalog__item">Акции отеля</li>
-              <li class="catalog__item">Блог</li>
-              <li class="catalog__item">Все новости</li>
+              <li class="catalog__item"><a href="#">Акции отеля</a></li>
+              <li class="catalog__item"><a href="#">Блог</a></li>
+              <li class="catalog__item"><a href="#">Все новости</a></li>
             </ul>
             <ul class="catalog__list">
-              <li class="catalog__item">Отзывы</li>
-              <li class="catalog__item">О нас</li>
-              <li class="catalog__item">Контакты</li>
+              <li class="catalog__item"><a href="#">Отзывы</a></li>
+              <li class="catalog__item"><a href="#">О нас</a></li>
+              <li class="catalog__item"><a href="#">Контакты</a></li>
             </ul>
             <ul class="catalog__list">
-              <li class="catalog__item">Пирсы</li>
-              <li class="catalog__item">Расположение</li>
-              <li class="catalog__item">Фотогаллерея</li>
+              <li class="catalog__item"><a href="#">Пирсы</a></li>
+              <li class="catalog__item"><a href="#">Расположение</a></li>
+              <li class="catalog__item"><a href="#">Фотогаллерея</a></li>
             </ul>
           </div>
         </div>
