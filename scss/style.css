@@ -13,6 +13,7 @@ body {
   font-size: 14px;
   height: 100%;
   color: #333333;
+  margin: 0px;
 }
 
 .container {
@@ -181,6 +182,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: white;
+  cursor: pointer;
 }
 
 .contacts__phone {
@@ -272,6 +274,7 @@ body {
   border-radius: 8px;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .main__other {
@@ -330,4 +333,155 @@ body {
 
 .hotels__container {
   padding-left: 17px;
+}
+
+.main__interesting {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px;
+}
+.interesting {
+}
+.interesting__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  padding-bottom: 33px;
+}
+
+.interesting__pictures {
+  display: flex;
+  flex-wrap: nowrap;
+  color: #ffffff;
+}
+
+.pictures__right-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.pictures__right-right {
+  display: flex;
+  flex-direction: column;
+}
+.pictures__left {
+  margin-right: 32px;
+}
+.pictures__left-big {
+  position: relative;
+}
+.pictures__right {
+  display: flex;
+  max-height: 414px;
+}
+.pictures__right-small {
+  position: relative;
+  display: inline;
+  flex-wrap: wrap;
+}
+.sm-text {
+  position: absolute;
+  left: 11px;
+  top: 112px;
+  line-height: 22px;
+  max-width: 188px;
+  margin: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.bg-text {
+  position: absolute;
+  left: 13px;
+  top: 205px;
+  line-height: 22px;
+  max-width: 191px;
+  margin: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.bg-picture {
+  width: 540px;
+  height: 414px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.sm-picture {
+  width: 255px;
+  height: 197px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-bottom: 21px;
+}
+
+.footer {
+  background: #333333;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0 78px 0;
+}
+
+.contact__name {
+  width: 205px;
+  height: 50px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.contact__geo {
+  display: flex;
+}
+.contact__phone {
+  display: flex;
+}
+.footer__sections {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+}
+.sections {
+}
+.sections__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+}
+.sections__catalog {
+  display: flex;
+}
+.catalog__list {
+  margin: 0 20px;
+}
+.catalog__item {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 20px 0 0;
+}
+.footer__social {
+  margin-top: 110px;
+}
+
+.social__icon {
+  margin-right: 18px;
+  width: 30.07px;
+  height: 28.95px;
+  cursor: pointer;
 }
