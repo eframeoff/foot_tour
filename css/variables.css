@@ -1,0 +1,10 @@
+:root {
+  --grey1: #333;
+  --grey2: rgba(184, 184, 184, 0.25);
+  --black1: rgba(0, 0, 0, 0.33);
+  --black2: rgba(0, 0, 0, 0.2);
+  --black3: rgba(51, 51, 51, 0.1);
+  --black4: rgba(0, 0, 0, 0.25);
+  --purple1: #5047d7;
+  --white1: #ffffff;
+}
