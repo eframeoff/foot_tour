@@ -1,7 +1,7 @@
 @font-face {
   font-family: "OpenSans";
-  src: url(./fonts/OpenSans-Regular.ttf) format("ttf"),
-    url(./fonts/OpenSans-Regular.ttf) format("woff");
+  src: url(../css/fonts/OpenSans-Regular.ttf) format("ttf"),
+    url(../css/fonts/OpenSans-Regular.ttf) format("woff");
   font-style: normal;
   font-display: swap;
   font-weight: 400;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "Ubuntu";
   src: url(./fonts/Ubuntu-Regular.ttf) format("ttf"),
-    url(../fonts/Ubuntu-Regular.ttf) format("woff");
+    url(./fonts/Ubuntu-Regular.ttf) format("woff");
   font-style: bold;
   font-display: swap;
   font-weight: 700;

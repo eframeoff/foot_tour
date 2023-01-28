@@ -1,6 +1,6 @@
-@import url("./null.css");
-@import url("./fonts.css");
-@import url("./variables.css");
+@import url("../css/null.css");
+@import url("../css/fonts.css");
+@import url("../css/variables.css");
 
 ul {
   padding: 0;
