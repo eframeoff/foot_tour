@@ -168,7 +168,7 @@ h3 {
   padding-right: 28px;
 }
 
-.images__left_item {
+.images__leftItem {
   width: 542.14px;
   height: 385.3px;
 }
@@ -177,13 +177,13 @@ h3 {
   display: flex;
 }
 
-.images__right_list {
+.images__rightList {
   display: flex;
   flex-direction: column;
   padding-right: 31px;
 }
 
-.images__right_item {
+.images__rightItem {
   width: 254.69px;
   height: 122px;
   padding-bottom: 11px;
