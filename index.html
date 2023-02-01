@@ -5,31 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foot Tour</title>
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <a href="#" class="header__logo">
-          <img src="./img/logo.svg" alt="Логотип" />
-        </a>
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#">Туры</a></li>
-            <li class="menu__item"><a href="#">Идеи</a></li>
-            <li class="menu__item"><a href="#">О нас</a></li>
-            <li class="menu__item"><a href="#">Помощь</a></li>
-          </ul>
-        </nav>
-        <div class="header__search search">
-          <input
-            type="search"
-            placeholder="Поиск по сайту"
-            class="search__window"
-          />
-          <img src="./img/find.svg" alt="Поиск" class="search__logo" />
+        <div class="header__container">
+          <a href="#" class="header__logo">
+            <img src="./img/logo.svg" alt="Логотип" />
+          </a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#">Туры</a></li>
+              <li class="menu__item"><a href="#">Идеи</a></li>
+              <li class="menu__item"><a href="#">О нас</a></li>
+              <li class="menu__item"><a href="#">Помощь</a></li>
+            </ul>
+          </nav>
+          <div class="header__search search">
+            <input
+              type="search"
+              placeholder="Поиск по сайту"
+              class="search__window"
+            />
+            <img src="./img/find.svg" alt="Поиск" class="search__logo" />
+          </div>
+          <button class="header__auth">Войти</button>
         </div>
-        <button class="header__auth">Войти</button>
       </header>
       <main class="main">
         <div class="container">
@@ -312,41 +314,43 @@
         </div>
       </main>
       <footer class="footer">
-        <div class="footer__contact contact">
-          <img src="img/logoWhite.svg" alt="Логотип" class="contact__name" />
-          <div class="contact__geo">
-            <img src="./img/geo.svg" alt="Локация" />
-            <p>г. Москва, 45412, Мариупольский район улица Культуры, д. 15</p>
+        <div class="footer__container">
+          <div class="footer__contact contact">
+            <img src="img/logoWhite.svg" alt="Логотип" class="contact__name" />
+            <div class="contact__geo">
+              <img src="./img/geo.svg" alt="Локация" />
+              <p>г. Москва, 45412, Мариупольский район улица Культуры, д. 15</p>
+            </div>
+            <div class="contact__phone">
+              <img src="./img/phone.svg" alt="Локация" />
+              <p>+7 (837) 452 34 23</p>
+            </div>
           </div>
-          <div class="contact__phone">
-            <img src="./img/phone.svg" alt="Локация" />
-            <p>+7 (837) 452 34 23</p>
+          <div class="footer__sections sections">
+            <div class="sections__name">Разделы</div>
+            <div class="sections__catalog">
+              <ul class="catalog__list">
+                <li class="catalog__item"><a href="#">Акции отеля</a></li>
+                <li class="catalog__item"><a href="#">Блог</a></li>
+                <li class="catalog__item"><a href="#">Все новости</a></li>
+              </ul>
+              <ul class="catalog__list">
+                <li class="catalog__item"><a href="#">Отзывы</a></li>
+                <li class="catalog__item"><a href="#">О нас</a></li>
+                <li class="catalog__item"><a href="#">Контакты</a></li>
+              </ul>
+              <ul class="catalog__list">
+                <li class="catalog__item"><a href="#">Пирсы</a></li>
+                <li class="catalog__item"><a href="#">Расположение</a></li>
+                <li class="catalog__item"><a href="#">Фотогаллерея</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="footer__sections sections">
-          <div class="sections__name">Разделы</div>
-          <div class="sections__catalog">
-            <ul class="catalog__list">
-              <li class="catalog__item"><a href="#">Акции отеля</a></li>
-              <li class="catalog__item"><a href="#">Блог</a></li>
-              <li class="catalog__item"><a href="#">Все новости</a></li>
-            </ul>
-            <ul class="catalog__list">
-              <li class="catalog__item"><a href="#">Отзывы</a></li>
-              <li class="catalog__item"><a href="#">О нас</a></li>
-              <li class="catalog__item"><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="catalog__list">
-              <li class="catalog__item"><a href="#">Пирсы</a></li>
-              <li class="catalog__item"><a href="#">Расположение</a></li>
-              <li class="catalog__item"><a href="#">Фотогаллерея</a></li>
-            </ul>
+          <div class="footer__social social">
+            <img src="./img/inst.svg" alt="Instagram" class="social__icon" />
+            <img src="./img/facebook.svg" alt="Faceboot" class="social__icon" />
+            <img src="./img/vk.svg" alt="Vk" class="social__icon" />
           </div>
-        </div>
-        <div class="footer__social social">
-          <img src="./img/inst.svg" alt="Instagram" class="social__icon" />
-          <img src="./img/facebook.svg" alt="Faceboot" class="social__icon" />
-          <img src="./img/vk.svg" alt="Vk" class="social__icon" />
         </div>
       </footer>
     </div>
