@@ -644,6 +644,10 @@ h3 {
     margin-left: 0;
     margin-right: 60px;
   }
+
+  .footer__sections {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -688,6 +692,11 @@ h3 {
     align-items: center;
   }
 
+  .advantage__firstRow,
+  .advantage__secondRow {
+    margin-right: 70px;
+  }
+
   /* main capability  */
 
   .main__capability {
@@ -715,6 +724,15 @@ h3 {
     align-items: center;
   }
 
+  .interesting__pictures {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pictures__left {
+    padding-bottom: 40px;
+  }
+
   /* footer */
 
   .footer__social {
@@ -725,6 +743,10 @@ h3 {
 
   .social__icon {
     margin-bottom: 15px;
+  }
+
+  .footer__sections {
+    margin-right: 50px;
   }
 }
 
