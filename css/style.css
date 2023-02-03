@@ -647,15 +647,19 @@ h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu__item {
+    margin-right: 20px;
+  }
+  .menu__item:last-child {
+    margin-left: 0;
+    margin-right: 20px;
+  }
   .search__window {
     width: 250px;
   }
 
   .header__auth {
     margin-left: 0;
-  }
-  .menu__item:last-child {
-    padding-left: 50px;
   }
 
   /* main hotel */
@@ -727,6 +731,39 @@ h3 {
 /* <992px */
 
 @media screen and (max-width: 767px) {
+  /* header */
+
+  .menu__list {
+    display: none;
+  }
+  .header__auth {
+    display: none;
+  }
+
+  /* burger-menu */
+
+  .icon-menu {
+    position: relative;
+    flex: 0 0 30px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    background-color: var(--blue1);
+    height: 2px;
+  }
+
+  .icon-menu span {
+    background-color: var(--blue1);
+    height: 2px;
+  }
+
   /* main hotel */
 
   .main__hotel {
