@@ -22,14 +22,16 @@
               <li class="menu__item"><a href="#">Помощь</a></li>
             </ul>
           </nav>
-          <div class="header__search search">
-            <input
-              type="search"
-              placeholder="Поиск по сайту"
-              class="search__window"
-            />
-            <img src="./img/find.svg" alt="Поиск" class="search__logo" />
-          </div>
+          <form action="#" class="header__search search">
+            <div class="search__field">
+              <input
+                type="search"
+                placeholder="Поиск по сайту"
+                class="search__input"
+              />
+              <img src="./img/find.svg" alt="Поиск" class="search__img" />
+            </div>
+          </form>
           <button class="header__auth">Войти</button>
         </div>
       </header>
@@ -127,7 +129,7 @@
           <section class="main__advantage advantage">
             <h1 class="advantage__name">Преимущества</h1>
             <div class="advantage__list">
-              <div class="advantage__row">
+              <!-- <div class="advantage__row">
                 <div class="advantage__item">
                   <img src="./img/passport.svg" alt="Виза" />
                   <p>Для граждан РФ виза не требуется</p>
@@ -154,7 +156,7 @@
                   <img src="./img/beach.svg" alt="Пляж" />
                   <p>Путь к пляжу: через территорию отеля</p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
           <section class="main__capability capability">
@@ -356,3 +358,81 @@
     </div>
   </body>
 </html>
+
+<script>
+  const advantages = [
+    {
+      id: 1,
+      img: "./img/passport.svg",
+      text: "Для граждан РФ виза не требуется",
+      alt: "Виза",
+    },
+    {
+      id: 2,
+      img: "./img/wifi.svg",
+      text: "Бесплатный Wi-Fi в номере",
+      alt: "Wi-Fi",
+    },
+    {
+      id: 3,
+      img: "./img/airplane.svg",
+      text: "АЭРОПОРТ Antalya – 65 км",
+      alt: "Аэропорт",
+    },
+    {
+      id: 4,
+      img: "./img/travel.svg",
+      text: "Различные развлечения на любой вкус",
+      alt: "Развлечения",
+    },
+    {
+      id: 5,
+      img: "./img/baggage.svg",
+      text: "Уютный первокласный трансфер",
+      alt: "Трансфер",
+    },
+    {
+      id: 6,
+      img: "./img/beach.svg",
+      text: "Путь к пляжу: через территорию отеля",
+      alt: "Пляж",
+    },
+  ];
+  const advantage__list = document.querySelector(".advantage__list");
+  const advantage__firstRow = document.createElement("div");
+  const advantage__secondRow = document.createElement("div");
+
+  advantage__firstRow.classList.add("advantage__firstRow");
+  advantage__secondRow.classList.add("advantage__secondRow");
+
+  const arrEven = advantages.filter((i) => i.id % 2 !== 0);
+  const arrUneven = advantages.filter((i) => i.id % 2 === 0);
+
+  arrEven.map((i) => {
+    const advantage__item = document.createElement("div");
+    advantage__item.classList.add("advantage__item");
+    const advantage__img = document.createElement("img");
+    advantage__img.src = i.img;
+    advantage__img.alt = i.alt;
+    const advantage__p = document.createElement("p");
+    advantage__p.textContent = i.text;
+    advantage__item.appendChild(advantage__img);
+    advantage__item.appendChild(advantage__p);
+    advantage__firstRow.appendChild(advantage__item);
+    advantage__list.appendChild(advantage__firstRow);
+  });
+
+  arrUneven.map((i) => {
+    const advantage__item = document.createElement("div");
+    advantage__item.classList.add("advantage__item");
+    const advantage__img = document.createElement("img");
+    advantage__img.src = i.img;
+    advantage__img.alt = i.alt;
+    const advantage__p = document.createElement("p");
+    advantage__p.textContent = i.text;
+    advantage__item.appendChild(advantage__img);
+    advantage__item.appendChild(advantage__p);
+    advantage__secondRow.appendChild(advantage__item);
+    advantage__list.appendChild(advantage__secondRow);
+  });
+</script>
