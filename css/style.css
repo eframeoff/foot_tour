@@ -45,7 +45,7 @@ h3 {
 .header {
   background: var(--white1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  margin-bottom: 75px;
+  margin-bottom: 54px;
 }
 
 .header__container {
@@ -138,13 +138,13 @@ h3 {
 }
 
 .container {
-  max-width: 1060px;
+  max-width: 1109px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
 .main__hotel {
-  margin-bottom: 141px;
+  margin-bottom: 129px;
   width: 100%;
 }
 
@@ -167,6 +167,10 @@ h3 {
 
 .stars__item:first-child {
   padding-left: 0;
+}
+
+.hotel__stars {
+  margin-bottom: 23px;
 }
 
 .hotel__images {
@@ -204,11 +208,13 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 39px;
+  margin: 0;
 }
 
 .contacts__adress {
   max-width: 250px;
+  line-height: 20px;
+  margin: 10px 0 10px;
 }
 
 .contacts__book {
@@ -227,7 +233,7 @@ h3 {
 }
 
 .contacts__phone {
-  padding-bottom: 15px;
+  margin: 0px 0 25px;
 }
 
 .contacts__map {
@@ -239,7 +245,7 @@ h3 {
 /* Advantage */
 
 .main__advantage {
-  margin-bottom: 120px;
+  margin-bottom: 90px;
 }
 
 .advantage__name {
@@ -248,7 +254,8 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 22px;
-  padding-bottom: 48px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .advantage__list {
@@ -259,24 +266,27 @@ h3 {
 .advantage__item {
   height: 48px;
   display: flex;
-  margin: 33px 100px 33px 0;
+  margin-bottom: 33px;
 }
 
 .advantage__item p {
   line-height: 20px;
   padding-left: 17px;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .advantage__firstRow,
 .advantage__secondRow {
   display: flex;
   flex-direction: column;
+  margin-right: 133px;
 }
 
 /* Capability */
 
 .main__capability {
-  padding-bottom: 120px;
+  margin-bottom: 121px;
 }
 
 .capability__name {
@@ -285,7 +295,8 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 22px;
-  padding-bottom: 48px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .capability__main {
@@ -312,26 +323,42 @@ h3 {
 }
 
 .block__name {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0px;
   padding-bottom: 10px;
 }
 
 .block__text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
-  padding-bottom: 23px;
+  margin-bottom: 30px;
   max-width: 206px;
   line-height: 20px;
   flex: 1 1 auto;
 }
 
 .block__button {
-  width: 151.18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  width: 140px;
   height: 34.06px;
   background: var(--grey1);
   border-radius: 8px;
   border: none;
   color: var(--white1);
   cursor: pointer;
+  padding-right: 26px;
 }
 
 /* Other */
@@ -339,7 +366,7 @@ h3 {
 .main__other {
   display: flex;
   flex-direction: column;
-  padding-bottom: 122px;
+  margin-bottom: 156px;
 }
 
 .other__name {
@@ -348,7 +375,8 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  padding-bottom: 47px;
+  margin: 0;
+  margin-bottom: 47px;
 }
 
 .other__hotels {
@@ -371,13 +399,13 @@ h3 {
   width: 350px;
   height: 215px;
   border-radius: 16px;
-  padding-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .hotels__container {
   display: flex;
   flex-direction: column;
-  padding-left: 17px;
+  padding-left: 14px;
 }
 
 .hotels__name {
@@ -387,7 +415,7 @@ h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  padding-bottom: 15px;
+  margin: 0;
   color: var(--grey1);
   flex: 1 1 auto;
 }
@@ -412,7 +440,8 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
-  padding-bottom: 33px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .interesting__pictures {
@@ -502,7 +531,6 @@ h3 {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 64px 0 78px 0;
 }
 
 .footer__container {
@@ -510,15 +538,17 @@ h3 {
   justify-content: space-between;
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
+  margin: 62px auto;
 }
 
 .contact__name {
   width: 205px;
   height: 50px;
+  margin-bottom: 6px;
 }
 
 .footer__contact {
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -530,6 +560,21 @@ h3 {
 
 .contact__phone {
   display: flex;
+}
+
+.contact__geo img,
+.contact__phone img {
+  margin-right: 8px;
+}
+
+.contact__geo p,
+.contact__phone p {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 8px;
 }
 
 .footer__sections {
@@ -609,6 +654,7 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+
   .hotel__images {
     display: flex;
     flex-direction: column;
