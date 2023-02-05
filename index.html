@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foot Tour</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* modal */
+
+      .vmodal.open .modal-overlay,
+      .vmodal.open .modal-window {
+        opacity: 1;
+        z-index: 1000;
+      }
+
+      .modal-overlay,
+      .modal-window {
+        opacity: 0;
+        z-index: -1;
+      }
+
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(144, 144, 144, 0.5);
+        backdrop-filter: blur(10px);
+      }
+
+      .modal-window {
+        width: 600px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: white;
+        margin: 200px auto;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -64,7 +100,7 @@
                 <img
                   src="./img/Rectangle 457.png"
                   alt="Картинка 1"
-                  class="images__leftItem"
+                  class="images__leftItem clickable-img"
                 />
               </div>
               <div class="images__right">
@@ -72,17 +108,17 @@
                   <img
                     src="./img/Rectangle 458.png"
                     alt="Картинка 2"
-                    class="images__rightItem"
+                    class="images__rightItem clickable-img"
                   />
                   <img
                     src="./img/Rectangle 459.png"
                     alt="Картинка 3"
-                    class="images__rightItem"
+                    class="images__rightItem clickable-img"
                   />
                   <img
                     src="./img/Rectangle 460.png"
                     alt="Картинка 5"
-                    class="images__rightItem"
+                    class="images__rightItem clickable-img"
                   />
                 </div>
                 <div class="contacts">
@@ -113,14 +149,14 @@
                         top: 14px;
                       "
                     ></a
-                    ><iframe
-                      src="https://yandex.ru/map-widget/v1/?ll=37.815210%2C55.918955&z=14"
-                      width="560"
-                      height="400"
-                      frameborder="1"
-                      allowfullscreen="true"
-                      style="position: relative"
-                    ></iframe>
+                    ><a
+                      href="https://yandex.ru/maps/?um=constructor%3A8c430aed6e060933accb64067f63438e1b64980e9f8e8f1726beb875d68ead2a&amp;source=constructorStatic"
+                      target="_blank"
+                      ><img
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A8c430aed6e060933accb64067f63438e1b64980e9f8e8f1726beb875d68ead2a&amp;width=320&amp;height=240&amp;lang=ru_RU"
+                        alt=""
+                        style="border: 0"
+                    /></a>
                   </div>
                   <button class="contacts__book">Забронировать</button>
                 </div>
@@ -359,8 +395,10 @@
     </div>
   </body>
 </html>
+<script src="./modalImg.js"></script>
 
 <script>
+  const modal = $.modalImg();
   const advantages = [
     {
       id: 1,
@@ -435,5 +473,19 @@
     advantage__item.appendChild(advantage__p);
     advantage__secondRow.appendChild(advantage__item);
     advantage__list.appendChild(advantage__secondRow);
+  });
+
+  const openImage = function (e) {
+    modal.open();
+    const img = document.querySelector(".modal-image");
+    img.src = e.target.src;
+    img.alt = "Картинка";
+    const newModal = document.querySelector(".vmodal");
+    newModal.querySelector("[data-content]").appendChild(img);
+  };
+
+  let images = document.querySelectorAll(".clickable-img");
+  images.forEach((image) => {
+    image.addEventListener("click", openImage);
   });
 </script>
