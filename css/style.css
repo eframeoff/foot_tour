@@ -711,10 +711,6 @@ h3 {
 /* Media */
 
 @media screen and (min-width: 1200px) and (max-width: 1320px) {
-  body {
-    color: green;
-  }
-
   .menu__item:last-child {
     margin-left: 0;
     margin-right: 60px;
@@ -1220,6 +1216,9 @@ h3 {
     margin-right: 0;
   }
 
+  .pictures__right-left {
+    margin-right: 0;
+  }
   /* footer */
 
   .footer__container {
